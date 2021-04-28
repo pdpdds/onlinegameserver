@@ -202,7 +202,7 @@ bool cSocket::Connect( char* szIP , int nPort )
 	{
 		cout<<">>";
 		cin>>szOutMsg;
-		if( 0 == strcmpi( szOutMsg , "quit" ) )
+		if( 0 == _strcmpi( szOutMsg , "quit" ) )
 			break;
 		
 		int nSendLen = send( m_socket , szOutMsg , strlen( szOutMsg ) , 0 );

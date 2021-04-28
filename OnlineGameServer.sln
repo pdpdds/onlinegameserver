@@ -15,26 +15,53 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Semaphore", "Semaphore\Semaphore.vcxproj", "{A98F864D-3D1B-4018-9732-CA864532D562}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "IOCompletionPort", "IOCompletionPort\IOCompletionPort.vcxproj", "{A1F5F582-C42A-4477-95B1-0DB0C316E72E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6A23D120-AAD4-41F1-8149-33FE1A55FBF5} = {6A23D120-AAD4-41F1-8149-33FE1A55FBF5}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DllTest", "DllTest\DllTest.vcxproj", "{AC181743-F5A7-4FF3-BD41-63E06F066560}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6A23D120-AAD4-41F1-8149-33FE1A55FBF5} = {6A23D120-AAD4-41F1-8149-33FE1A55FBF5}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DllTestApp", "DllTestApp\DllTestApp.vcxproj", "{3C1991E3-AB0A-4A7A-8DF4-1E026E8E11CC}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6A23D120-AAD4-41F1-8149-33FE1A55FBF5} = {6A23D120-AAD4-41F1-8149-33FE1A55FBF5}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NetLib", "NetLib\NetLib.vcxproj", "{6A23D120-AAD4-41F1-8149-33FE1A55FBF5}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ChatServer", "ChatServer\ChatServer.vcxproj", "{8A519ADB-00EE-484C-9BE3-D13D4EAB63E0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6A23D120-AAD4-41F1-8149-33FE1A55FBF5} = {6A23D120-AAD4-41F1-8149-33FE1A55FBF5}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Echo2_1", "echo2_1\echo2_1.vcxproj", "{124F0351-672B-40EA-B796-C78E9123DB03}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6A23D120-AAD4-41F1-8149-33FE1A55FBF5} = {6A23D120-AAD4-41F1-8149-33FE1A55FBF5}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AsyncSelect", "AsyncSelect\AsyncSelect.vcxproj", "{23FE6FAD-13A5-4095-AC2D-A10FC916B0D2}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ChatClient", "ChatClient\ChatClient.vcxproj", "{61FD92B7-BAD8-4564-B9CA-2247F95557A6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6A23D120-AAD4-41F1-8149-33FE1A55FBF5} = {6A23D120-AAD4-41F1-8149-33FE1A55FBF5}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GameServer", "GameServer\GameServer.vcxproj", "{4A2740C1-D58D-4881-A411-F889A856440C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6A23D120-AAD4-41F1-8149-33FE1A55FBF5} = {6A23D120-AAD4-41F1-8149-33FE1A55FBF5}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GameClient", "GameClient\GameClient.vcxproj", "{06E4039D-690D-487D-896C-75C220606DE1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6A23D120-AAD4-41F1-8149-33FE1A55FBF5} = {6A23D120-AAD4-41F1-8149-33FE1A55FBF5}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NpcServer", "NpcServer\NpcServer.vcxproj", "{64127511-433D-40AF-940C-9E5696DF2084}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6A23D120-AAD4-41F1-8149-33FE1A55FBF5} = {6A23D120-AAD4-41F1-8149-33FE1A55FBF5}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EventSelect", "EventSelect\EventSelect.vcxproj", "{11055104-14D0-48D4-8651-9ABB38B9B363}"
 EndProject

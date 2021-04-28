@@ -58,7 +58,7 @@ int _tmain(int argc, _TCHAR* argv[])
 		, ThreadFunc, NULL, CREATE_SUSPENDED, &uiThreadID);
 	cout << "Create Thread ID : " << uiThreadID << endl;
 
-	if (NULL == hThread1 || NULL == hThread2 | NULL == hThread3)
+	if (NULL == hThread1 || NULL == hThread2 || NULL == hThread3)
 	{
 		cout << "[ERROR] Thread1 or hThread2 is NULL.." << endl;
 		return 0;

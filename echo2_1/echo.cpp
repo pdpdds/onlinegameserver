@@ -19,14 +19,14 @@ int main( int argc, char* argv[] )
 	cSocket Socket;
 
 	//echo 서버로 시작
-	if( strcmpi( argv[ 1 ] , "/server" ) == 0 )
+	if( _strcmpi( argv[ 1 ] , "/server" ) == 0 )
 	{
 		Socket.InitSocket();
 		Socket.BindandListen( SERVER_PORT );
 		Socket.StartServer();
 	}
 	//echo 클라이언트로 시작
-	else if( strcmpi( argv[ 1 ] , "/client" ) == 0 )
+	else if( _strcmpi( argv[ 1 ] , "/client" ) == 0 )
 	{
 		Socket.InitSocket();
 		Socket.Connect( SERVER_IP , SERVER_PORT );

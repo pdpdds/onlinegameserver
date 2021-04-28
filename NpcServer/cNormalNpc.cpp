@@ -20,12 +20,12 @@ void cNormalNpc::Init()
 
 void cNormalNpc::OnProcess()
 {
-	switch( m_pFsmClass->GetCurState() )
-	{
-	default:
-		{
+	//switch( m_pFsmClass->GetCurState() )
+	//{
+	//default:
+		//{
 			cNpc::OnProcess();
-		}
-		break;
-	}
+		//}
+	//	break;
+	//}
 }

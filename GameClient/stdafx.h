@@ -8,6 +8,7 @@
 #define VC_EXTRALEAN		// Windows 헤더에서 거의 사용되지 않는 내용을 제외시킵니다.
 #endif
 
+#define _WIN32_WINNT _WIN32_WINNT_MAXVER
 
 #define _ATL_CSTRING_EXPLICIT_CONSTRUCTORS	// 일부 CString 생성자는 명시적으로 선언됩니다.
 
