@@ -1,0 +1,311 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#include ""res\\GameClient.rc2""  // Microsoft Visual C++에서 편집되지 않은 리소스\r\n"
+    "#include ""afxres.rc""         // 표준 구성 요소\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\GameClient.ico"
+IDI_ICON1               ICON                    "res\\icon1.ico"
+IDI_ICON2               ICON                    "res\\icon2.ico"
+IDI_ICON3               ICON                    "res\\icon3.ico"
+IDI_ICON4               ICON                    "res\\icon4.ico"
+IDI_ICON5               ICON                    "res\\icon5.ico"
+IDI_ICON6               ICON                    "res\\icon6.ico"
+IDI_ICON7               ICON                    "res\\icon7.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "GameClient 정보"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "GameClient Version 1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2004",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "확인",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_GAMECLIENT_DIALOG DIALOGEX 0, 0, 541, 483
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "GameClient"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "로그인",IDOK,7,441,50,16
+    PUSHBUTTON      "끝내기",IDCANCEL,7,461,50,16
+    LTEXT           "",IDC_NAME,496,38,31,8
+    LTEXT           "",IDC_ID,496,19,33,8
+    LTEXT           "",IDC_NICKNAME,496,28,44,8
+    LTEXT           "",IDC_POS,496,109,35,8
+    LTEXT           "",IDC_LEVEL,496,59,14,8
+    LTEXT           "",IDC_STR,496,101,45,8
+    LTEXT           "",IDC_DUR,496,69,18,8
+    LTEXT           "",IDC_HP,496,79,28,8
+    LTEXT           "",IDC_EXP,496,90,35,8
+    GROUPBOX        "필드",IDC_STATIC,0,0,452,437
+    GROUPBOX        "내 정보",IDC_STATIC,458,4,80,119
+    LTEXT           "IP : ",IDC_STATIC,69,444,14,8
+    LTEXT           "Port :",IDC_STATIC,67,465,19,8
+    EDITTEXT        IDC_EDIT1,84,442,70,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,83,463,70,14,ES_AUTOHSCROLL
+    LISTBOX         IDC_OUTPUT,163,440,375,42,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "",IDC_PKEY,496,48,28,8
+    LTEXT           "아이디 : ",IDC_ID2,461,19,28,8
+    LTEXT           "별명 : ",IDC_NICKNAME2,468,29,22,8
+    LTEXT           "레벨 : ",IDC_LEVEL2,468,59,22,8
+    LTEXT           "방어력 : ",IDC_DUR2,461,69,28,8
+    LTEXT           "생명력 : ",IDC_HP2,461,80,28,8
+    LTEXT           "경험치 :",IDC_EXP2,461,100,25,8
+    LTEXT           "이름 : ",IDC_NAME3,468,39,22,8
+    LTEXT           "개인키 : ",IDC_NAME4,461,49,28,8
+    LTEXT           "위치 : ",IDC_POS2,468,110,19,8
+    LTEXT           "공격력 : ",IDC_STR2,461,90,28,8
+    LTEXT           "",IDC_TNAME,496,165,31,8
+    LTEXT           "",IDC_TID,496,145,33,8
+    LTEXT           "",IDC_TNICKNAME,496,155,39,8
+    LTEXT           "",IDC_TPOS,496,235,35,8
+    LTEXT           "",IDC_TLEVEL,496,185,14,8
+    LTEXT           "",IDC_TSTR,496,226,39,8
+    LTEXT           "",IDC_TDUR,496,195,18,8
+    LTEXT           "",IDC_THP,496,205,28,8
+    LTEXT           "",IDC_TEXP,496,215,35,8
+    GROUPBOX        "상대방 정보",IDC_STATIC,459,130,80,119
+    LTEXT           "",IDC_TPKEY,496,175,28,8
+    LTEXT           "아이디 : ",IDC_ID4,462,145,28,8
+    LTEXT           "별명 : ",IDC_NICKNAME4,469,155,22,8
+    LTEXT           "레벨 : ",IDC_LEVEL4,469,185,22,8
+    LTEXT           "방어력 : ",IDC_DUR4,462,195,28,8
+    LTEXT           "생명력 : ",IDC_HP4,462,205,28,8
+    LTEXT           "경험치 :",IDC_EXP4,462,225,27,8
+    LTEXT           "이름 : ",IDC_NAME5,469,165,22,8
+    LTEXT           "개인키 : ",IDC_NAME6,462,175,28,8
+    LTEXT           "위치 : ",IDC_POS5,469,235,22,8
+    LTEXT           "공격력 : ",IDC_STR4,462,215,28,8
+    GROUPBOX        "NPC 정보",IDC_STATIC,459,255,80,69
+    LTEXT           "이름 : ",IDC_NAME7,471,268,22,8
+    LTEXT           "개인키 : ",IDC_NAME8,464,278,28,8
+    LTEXT           "위치 : ",IDC_POS6,471,288,22,8
+    LTEXT           "",IDC_NNAME,498,269,31,8
+    LTEXT           "",IDC_NPOS,498,289,39,8
+    LTEXT           "",IDC_NKEY,498,279,28,8
+    LTEXT           "타입 :",IDC_STATIC,471,298,19,8
+    LTEXT           "상태 :",IDC_STATIC,471,308,19,8
+    LTEXT           "",IDC_NTYPE,498,299,29,8
+    LTEXT           "",IDC_NSTATE,498,309,29,8
+    PUSHBUTTON      "도움말",IDC_HELPDLG,470,362,50,68
+END
+
+IDD_HELPDLG DIALOGEX 0, 0, 351, 301
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "HELP"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "확인",IDOK,129,286,50,14
+    LTEXT           "1. NpcServer.exe를 실행시키고 메뉴에 Start를 선택한다.",
+                    IDC_STATIC,12,20,315,9
+    LTEXT           "2. NpcServer의 메뉴에 NPC생성을 선택한다.",IDC_STATIC,
+                    12,31,315,9
+    LTEXT           "3. GameServer.exe를 실행시키고 메뉴에 Start를 선택한다.",
+                    IDC_STATIC,12,41,315,9
+    LTEXT           "4. GameServer의 메뉴에 가상플레이어 생성을 선택한다.",
+                    IDC_STATIC,12,51,315,9
+    LTEXT           "5. GameServer의 메뉴에 Connect NpcServer를 선택한다.",
+                    IDC_STATIC,12,61,315,9
+    LTEXT           "1. 위에 방법대로 GameServer와 NpcServer를 실행하였다면 GameClient의 로그인 버튼을 누룬다.",
+                    IDC_STATIC,11,94,333,9
+    LTEXT           "2. 흰색 사각형은 현재 나의 위치를 나타내며 흰색 테두리 사각형은 내가 움직일 수 있는 영역       을 나타낸다.",
+                    IDC_STATIC,12,105,325,21
+    LTEXT           "3. 흰색 테두리 사각형에 마우스 오른쪽 버튼을 누루면 그곳까지 흰색 사각형이 움직인다.",
+                    IDC_STATIC,12,124,333,9
+    LTEXT           "4. 다른 사용자나 NPC의 정보를 보려면 해당 색깔의 사각형에 마우스 오른쪽 버튼을 누루면 된다.",
+                    IDC_STATIC,12,135,338,9
+    GROUPBOX        "게임 클라이언트 작동을 위한 서버 실행 방법",IDC_STATIC,
+                    1,6,350,70
+    GROUPBOX        "게임 클라이언트 작동 방법",IDC_STATIC,1,80,350,75
+    GROUPBOX        "색깔에 따른 사각형 정보",IDC_STATIC,1,158,350,125
+    ICON            IDI_ICON1,IDC_COLMYUSER,7,171,21,20
+    LTEXT           "- 자신의 캐릭터를 나타낸다.",IDC_STATIC,32,177,108,8
+    LTEXT           "- 상대방 플레이어를 나타낸다.",IDC_STATIC,32,204,110,8
+    LTEXT           "- 일반 몬스터를 나타낸다.",IDC_STATIC,189,205,98,8
+    LTEXT           "- 선 공격 몬스터를 나타낸다.",IDC_STATIC,32,229,105,8
+    LTEXT           "- 선 공격 몬스터가 플레이어를 발견하였을 때",IDC_STATIC,
+                    189,226,160,8
+    LTEXT           "- 선 공격 몬스터가 분노하여 플레이어를 공격할 때",
+                    IDC_STATIC,32,256,181,8
+    LTEXT           "- 자신의 캐릭터가 죽었을 때",IDC_STATIC,189,178,103,8
+    ICON            IDI_ICON2,IDC_COLMYUSER2,165,171,21,20
+    ICON            IDI_ICON3,IDC_COLMYUSER3,7,198,21,20
+    ICON            IDI_ICON4,IDC_COLMYUSER4,165,198,21,20
+    ICON            IDI_ICON5,IDC_COLMYUSER5,7,224,21,20
+    ICON            IDI_ICON7,IDC_COLMYUSER6,7,251,21,20
+    ICON            IDI_ICON6,IDC_COLMYUSER7,165,223,21,20
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041203b5"
+        BEGIN
+            VALUE "CompanyName", "TODO: <회사 이름>"
+            VALUE "FileDescription", "TODO: <파일 설명>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "GameClient.exe"
+            VALUE "LegalCopyright", "TODO: (c) <회사 이름>.  All rights reserved."
+            VALUE "OriginalFilename", "GameClient.exe"
+            VALUE "ProductName", "TODO: <제품 이름>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "변환", 0x412, 949
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_HELPDLG, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 265
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "GameClient 정보(&A)..."
+END
+
+#endif    // 한국어 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE 18, 1
+#pragma code_page(949)
+#include "res\GameClient.rc2"  // Microsoft Visual C++에서 편집되지 않은 리소스
+#include "afxres.rc"         // 표준 구성 요소
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
