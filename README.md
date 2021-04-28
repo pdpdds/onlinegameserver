@@ -1,2 +1,4 @@
 # onlinegameserver
-game server book source code
+2005년에 발간된 온라인 게임 서버 서적의 소스코드를
+비쥬얼 스튜디오 2019에서 빌드가능하도록 작업한 리파지토리입니다.
+MFC로 작성된 프로젝트가 있으므로 비쥬얼 스튜디오에서 MFC 모듈을 설치해야 합니다.
