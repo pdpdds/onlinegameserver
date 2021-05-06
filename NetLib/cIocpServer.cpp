@@ -291,7 +291,7 @@ void cIocpServer::WorkerThread()
 		lpOverlapped = NULL;
 		bSuccess = GetQueuedCompletionStatus(m_hWorkerIOCP,
 			&dwIoSize,
-			(LPDWORD)&lpConnection,
+			(PULONG_PTR)&lpConnection,
 			&lpOverlapped,
 			INFINITE);
 
@@ -622,7 +622,7 @@ void cIocpServer::ProcessThread()
 		dwIoSize = 0;
 		bSuccess = GetQueuedCompletionStatus(m_hProcessIOCP,
 			&dwIoSize,
-			(LPDWORD)&lpConnection,
+			(PULONG_PTR)&lpConnection,
 			(LPOVERLAPPED*)&lpProcessPacket,
 			INFINITE);
 		//쓰레드 종료

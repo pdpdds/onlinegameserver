@@ -444,7 +444,7 @@ void CGameClientDlg::ProcessPacket( char* pRecvBuf , int nRecvLen )
 }
 
 
-void CGameClientDlg::OnTimer(UINT nIDEvent)
+void CGameClientDlg::OnTimer(UINT_PTR nIDEvent)
 {
 	//화면 갱신 이라면
 	if( nIDEvent == 1 )

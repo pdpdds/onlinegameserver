@@ -210,7 +210,7 @@ bool cConnection::BindIOCP(HANDLE& hIOCP)
 	cMonitor::Owner lock( m_csConnection );
 
 	hIOCPHandle = CreateIoCompletionPort((HANDLE)m_socket,
-		hIOCP, reinterpret_cast<DWORD>( this ) , 0);
+		hIOCP, reinterpret_cast<ULONG_PTR>( this ) , 0);
 	
 	if( NULL == hIOCPHandle  || hIOCP != hIOCPHandle )
 	{

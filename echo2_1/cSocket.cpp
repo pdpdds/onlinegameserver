@@ -123,7 +123,7 @@ bool cSocket::StartServer()
 		return false;
 	}
 	sprintf( szOutStr , "클라이언트 접속 : IP(%s) SOCKET(%d)" 
-		, inet_ntoa( stClientAddr.sin_addr ) , m_socketConnect );
+		, inet_ntoa( stClientAddr.sin_addr ) , (DWORD)m_socketConnect );
     
 	cout<<szOutStr<<endl;
 
@@ -205,7 +205,7 @@ bool cSocket::Connect( char* szIP , int nPort )
 		if( 0 == _strcmpi( szOutMsg , "quit" ) )
 			break;
 		
-		int nSendLen = send( m_socket , szOutMsg , strlen( szOutMsg ) , 0 );
+		int nSendLen = send( m_socket , szOutMsg , (int)strlen( szOutMsg ) , 0 );
 		if( -1 == nSendLen )
 		{
 			cout<<"[에러] 위치 : cSocket::Connect() , 이유 : send()함수 실패 , ErrorCode : "

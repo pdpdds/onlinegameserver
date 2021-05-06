@@ -50,5 +50,5 @@ public:
 protected:
 	virtual void OnOK();
 public:
-	afx_msg void OnTimer(UINT nIDEvent);
+	afx_msg void OnTimer(UINT_PTR nIDEvent);
 };

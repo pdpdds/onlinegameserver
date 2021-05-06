@@ -177,7 +177,7 @@ bool cIOCompletionPort::BindIOCompletionPort( stClientInfo* pClientInfo )
 	//socket과 pClientInfo를 CompletionPort객체와 연결시킨다.
 	hIOCP = CreateIoCompletionPort((HANDLE)pClientInfo->m_socketClient
 		, m_hIOCP
-		, reinterpret_cast<DWORD>( pClientInfo ) , 0);
+		, reinterpret_cast<ULONG_PTR>( pClientInfo ) , 0);
 	if( NULL == hIOCP  || m_hIOCP != hIOCP )
 	{
 		m_pMainDlg->OutputMsg("[에러] CreateIoCompletionPort()함수 실패",GetLastError() );
@@ -345,7 +345,7 @@ void cIOCompletionPort::WokerThread()
 		//////////////////////////////////////////////////////
 		bSuccess = GetQueuedCompletionStatus( m_hIOCP,
 			&dwIoSize,					// 실제로 전송된 바이트
-			(LPDWORD)&pClientInfo,		// CompletionKey
+			(PULONG_PTR)&pClientInfo,		// CompletionKey
 			&lpOverlapped,				// Overlapped IO 객체
 			INFINITE );					// 대기할 시간
 		
